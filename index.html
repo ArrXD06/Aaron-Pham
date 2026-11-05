@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rancho Santana</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#top">Rancho Santana</a>
+  <a class="btn btn-solid" href="https://ranchosantana.com/" target="_blank" rel="noopener">Reserve now</a>
+</header>
+
+<main id="top">
+  <section class="films" id="films" aria-labelledby="filmsTitle">
+    <h2 id="filmsTitle">The Ranch in motion</h2>
+    <div class="grid">
+
+      <article class="card c-wide">
+        <button class="thumb" data-video="videos/phantom-long.mp4" data-title="Black Phantom">
+          <video muted loop playsinline preload="metadata"><source src="videos/phantom-long.mp4" type="video/mp4"></video>
+          <span class="play" aria-hidden="true"></span>
+        </button>
+        <h3>Black Phantom</h3>
+      </article>
+
+      <article class="card c-tall">
+        <button class="thumb" data-video="videos/mona-lisa.mp4" data-title="Mona Lisa">
+          <video muted loop playsinline preload="metadata"><source src="videos/mona-lisa.mp4" type="video/mp4"></video>
+          <span class="play" aria-hidden="true"></span>
+        </button>
+        <h3>Mona Lisa</h3>
+      </article>
+
+      <article class="card c-tall">
+        <button class="thumb" data-video="videos/car-parking.mp4" data-title="Car parking">
+          <video muted loop playsinline preload="metadata"><source src="videos/car-parking.mp4" type="video/mp4"></video>
+          <span class="play" aria-hidden="true"></span>
+        </button>
+        <h3>Car parking</h3>
+      </article>
+
+      <article class="card c-wide">
+        <button class="thumb" data-video="videos/phantom-short.mp4" data-title="Black Phantom short">
+          <video muted loop playsinline preload="metadata"><source src="videos/phantom-short.mp4" type="video/mp4"></video>
+          <span class="play" aria-hidden="true"></span>
+        </button>
+        <h3>Black Phantom short</h3>
+      </article>
+
+      <article class="card c-tall">
+        <button class="thumb" data-video="videos/easter-bunny.mp4" data-title="Easter bunny">
+          <video muted loop playsinline preload="metadata"><source src="videos/easter-bunny.mp4" type="video/mp4"></video>
+          <span class="play" aria-hidden="true"></span>
+        </button>
+        <h3>Easter bunny</h3>
+      </article>
+
+      <article class="card c-tall">
+        <button class="thumb" data-video="videos/17-may.mp4" data-title="17 May">
+          <video muted loop playsinline preload="metadata"><source src="videos/17-may.mp4" type="video/mp4"></video>
+          <span class="play" aria-hidden="true"></span>
+        </button>
+        <h3>17 May</h3>
+      </article>
+
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div>
+    <strong>Rancho Santana</strong>
+    <p>Comarca Limon #1, Carretera Las Salinas, Tola-Rivas, Popoyo, Nicaragua 48500</p>
+  </div>
+  <p class="fine">© 2026 Rancho Santana. Local recreation for learning purposes.</p>
+</footer>
+
+<dialog id="modal" aria-label="Video player">
+  <button class="close" id="closeModal" aria-label="Close video">Close</button>
+  <video id="modalVideo" controls playsinline></video>
+  <p id="modalTitle"></p>
+</dialog>
+
+<script src="script.js"></script>
+</body>
+</html>
